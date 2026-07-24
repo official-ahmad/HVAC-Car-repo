@@ -1,0 +1,106 @@
+#hero-parent{
+    background-image: url("/hero-bg.jpg");
+    background-attachment: fixed;
+    /* background-size: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%; 
+    padding: 2rem 3rem; 
+    margin-top: 20px;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+}
+#hero-parent h3{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+#hero-parent h1{
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+}
+#hero-parent h2{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+#hero-parent p{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+}
+.hero-section{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-section button{
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    /* padding: 0.5rem 1rem; */
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    /* border-radius: 5px; */
+    transition: all  0.3s ease;
+}
+.hero-section button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+
+}
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.hero-buttons .test-drive {
+    background-color: #dc3545;
+    color: white;
+    border: 2px solid transparent; 
+    cursor: pointer;
+    padding: 16px 24px; 
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    /* border-radius: 5px; */
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-buttons .test-drive:hover {
+    background-color: transparent;
+    color: white;
+    border-color: white; 
+}
+.hero-buttons .learn-more {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white; 
+    cursor: pointer;
+    padding: 16px 24px; /* Clean single padding statement */
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    /* border-radius: 5px; */
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hero-buttons .learn-more:hover {
+    background-color: white;
+    color: #dc3545;
+    border-color: white; /* Hover pe sirf border ka color visible ho jaye */
+}

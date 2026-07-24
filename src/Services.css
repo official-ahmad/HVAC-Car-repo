@@ -1,0 +1,114 @@
+#services-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0px;
+  background-color: #f5f5f5;
+  gap: 40px;
+}
+
+.services-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.services-section span {
+  font-size: 20px;
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.services-section h2 {
+  font-size: 40px;
+  color: #353535;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+.services-section p {
+  font-size: 15px;
+  color: #727171;
+  text-align: center;
+  line-height: 25px;
+  margin: 0 0 15px 0;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; 
+  gap: 30px; 
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap; 
+  height: 100%;
+}
+
+
+.services-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 20px;
+  width: 320px; 
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  height: 100%;
+}
+
+.services-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+.services-card h5 {
+  font-size: 20px;
+  color: #353535;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.services-card p {
+  font-size: 15px;
+  color: #727171;
+  line-height: 25px;
+}
+.services-card button {
+  background-color: #dc3545;
+  color: white;
+
+  /* Transparent border pehle se reserved hai taake hover par button na phaile */
+  border: 2px solid transparent;
+
+  /* Perfect Circle Styling */
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 0; /* Fixed width/height ke saath padding 0 rakhen */
+
+  /* Icon ko center align karne ke liye */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box; /* Ensures border width stays inside */
+}
+
+.services-card button:hover {
+  background-color: transparent;
+  color: #dc3545;
+  border-color: #dc3545; 
+}
