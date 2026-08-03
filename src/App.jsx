@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Services from "./Services";
 import Feature from "./Feature";
+import Vehicle from "./Vehicle";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Services />
       <Feature />
+      <Vehicle />
     </>
   );
 }
