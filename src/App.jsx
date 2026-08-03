@@ -5,6 +5,8 @@ import Hero from "./Hero";
 import Services from "./Services";
 import Feature from "./Feature";
 import Vehicle from "./Vehicle";
+import About from "./About";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Services />
       <Feature />
       <Vehicle />
+      <About />
+      <Contact /> 
     </>
   );
 }

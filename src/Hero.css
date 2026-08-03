@@ -1,106 +1,190 @@
-#hero-parent{
-    background-image: url("/hero-bg.jpg");
-    background-attachment: fixed;
-    /* background-size: cover; */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%; 
-    padding: 2rem 3rem; 
-    margin-top: 20px;
-    flex-direction: column;
-    height: 100vh;
-    gap: 20px;
+#hero-parent {
+  background-image: url("/hero-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%; 
+  padding: 2rem 3rem; 
+  margin-top: 20px;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 20px;
+  box-sizing: border-box;
 }
-#hero-parent h3{
-    font-size: 30px;
-    color: white;
-    font-weight: bold;
-}
-#hero-parent h1{
-    font-size: 70px;
-    color: white;
-    font-weight: bold;
-}
-#hero-parent h2{
-    font-size: 40px;
-    color: white;
-    font-weight: bold;
-}
-#hero-parent p{
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-    width: 50%;
-}
-.hero-section{
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    justify-content: space-between;
-}
-.hero-section button{
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    /* padding: 0.5rem 1rem; */
-    font-weight: bold;
-    cursor: pointer;
-    padding: 18px;
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    font-weight: bold;
-    /* border-radius: 5px; */
-    transition: all  0.3s ease;
-}
-.hero-section button:hover {
-    background-color: transparent;
-    border: 2px solid white;
 
+#hero-parent h3 {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  margin: 0;
 }
-.hero-buttons{
-    display: flex;
-    gap: 20px;
-    padding: 20px;
+
+#hero-parent h1 {
+  font-size: 70px;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.1;
 }
+
+#hero-parent h2 {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+#hero-parent p {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  width: 50%;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.hero-section {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-section button {
+  background-color: #dc3545;
+  color: white;
+  border: 2px solid transparent;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 18px;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.hero-section button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
 .hero-buttons .test-drive {
-    background-color: #dc3545;
-    color: white;
-    border: 2px solid transparent; 
-    cursor: pointer;
-    padding: 16px 24px; 
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    font-weight: bold;
-    /* border-radius: 5px; */
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: 2px solid #dc3545; 
+  cursor: pointer;
+  padding: 16px 24px; 
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: border-box;
 }
 
 .hero-buttons .test-drive:hover {
-    background-color: transparent;
-    color: white;
-    border-color: white; 
+  background-color: transparent;
+  color: white;
+  border-color: white; 
 }
+
 .hero-buttons .learn-more {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white; 
-    cursor: pointer;
-    padding: 16px 24px; /* Clean single padding statement */
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    font-weight: bold;
-    /* border-radius: 5px; */
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white; 
+  cursor: pointer;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: border-box;
 }
+
 .hero-buttons .learn-more:hover {
-    background-color: white;
-    color: #dc3545;
-    border-color: white; /* Hover pe sirf border ka color visible ho jaye */
+  background-color: white;
+  color: #dc3545;
+  border-color: white;
+}
+
+@media (max-width: 768px) {
+  #hero-parent {
+    background-attachment: scroll;
+    padding: 2rem 1.5rem;
+    height: auto;
+  }
+  #hero-parent h1 {
+    font-size: 42px;
+  }
+  #hero-parent h2 {
+    font-size: 28px;
+  }
+  #hero-parent p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .hero-section {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 320px) {
+  #hero-parent {
+    padding: 1.25rem 0.85rem;
+    margin-top: 10px;
+    gap: 12px;
+    min-height: auto;
+    background-attachment: scroll;
+  }
+  #hero-parent h3 {
+    font-size: 18px;
+  }
+  #hero-parent h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  #hero-parent h2 {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+  #hero-parent p {
+    font-size: 13px;
+    width: 100%;
+    line-height: 1.4;
+    font-weight: normal;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .hero-buttons .test-drive,
+  .hero-buttons .learn-more {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+  }
 }

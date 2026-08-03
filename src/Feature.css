@@ -6,15 +6,19 @@
   background-color: #ffffff;
   margin-top: 2rem;
   gap: 2rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 #feature-parent .feature-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start; /* Left align text & buttons */
+  align-items: flex-start;
   gap: 1.25rem;
   max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .feature-content span {
@@ -29,20 +33,23 @@
   font-weight: bold;
   color: #333333;
   line-height: 1.2;
+  margin: 0;
 }
 
 .feature-content p {
   font-size: 1rem;
   color: #666666;
   line-height: 1.6;
+  margin: 0;
 }
 
-/* Buttons Container */
 .btns {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-top: 0.5rem;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .btns button {
@@ -51,6 +58,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .btns .btn1 {
@@ -74,9 +82,55 @@
   color: #ffffff;
 }
 
-/* Image Wrapper */
+.feature-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .feature-img img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #feature-parent {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  #feature-parent {
+    padding: 1.25rem 0.85rem;
+    margin-top: 1rem;
+    gap: 1.5rem;
+  }
+  #feature-parent .feature-content {
+    gap: 0.85rem;
+  }
+  .feature-content span {
+    font-size: 0.85rem;
+  }
+  .feature-content h2 {
+    font-size: 1.4rem;
+    line-height: 1.25;
+  }
+  .feature-content p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  .btns {
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 100%;
+  }
+  .btns button {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+  }
 }

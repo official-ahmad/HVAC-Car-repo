@@ -20,7 +20,7 @@ function Vehicle() {
           </div>
         </div>
         <div className="car">
-          <img src="/car-1.jpg" alt="" />
+          <img src="/car-2.jpg" alt="" />
           <div className="car-heading">
             <button>2020</button>
             <h3>Toyota camry asv50l-jeteku</h3>
@@ -31,7 +31,18 @@ function Vehicle() {
           </div>
         </div>
         <div className="car">
-          <img src="/car-1.jpg" alt="" />
+          <img src="/car-3.jpg" alt="" />
+          <div className="car-heading">
+            <button>2018</button>
+            <h3>BMW X5 xDrive40d</h3>
+          </div>
+          <div className="car-btn">
+            <button className="btn">Read More</button>
+            <span>$25,000</span>
+          </div>
+        </div>
+        <div className="car">
+          <img src="/car-4.jpg" alt="" />
           <div className="car-heading">
             <button>2016</button>
             <h3>Porsche cayenne turbo s</h3>
@@ -42,7 +53,18 @@ function Vehicle() {
           </div>
         </div>
         <div className="car">
-          <img src="/car-1.jpg" alt="" />
+          <img src="/car-5.jpg" alt="" />
+          <div className="car-heading">
+            <button>2020</button>
+            <h3>Mercedes-Benz GLE</h3>
+          </div>
+          <div className="car-btn">
+            <button className="btn">Read More</button>
+            <span>$25,000</span>
+          </div>
+        </div>
+        <div className="car">
+          <img src="/car-6.jpg" alt="" />
           <div className="car-heading">
             <button>2016</button>
             <h3>Porsche cayenne turbo s</h3>
@@ -53,72 +75,19 @@ function Vehicle() {
           </div>
         </div>
         <div className="car">
-          <img src="/car-1.jpg" alt="" />
+          <img src="/car-7.jpg" alt="" />
           <div className="car-heading">
             <button>2016</button>
             <h3>Porsche cayenne turbo s</h3>
-          </div>
-          <div className="car-btn">
-            <button className="btn">Read More</button>
-            <span>$25,000</span>
           </div>
         </div>
         <div className="car">
-          <img src="/car-1.jpg" alt="" />
+          <img src="/car-8.jpg" alt="" />
           <div className="car-heading">
             <button>2016</button>
             <h3>Porsche cayenne turbo s</h3>
           </div>
-          <div className="car-btn">
-            <button className="btn">Read More</button>
-            <span>$25,000</span>
-          </div>
         </div>
-        <div className="car">
-          <img src="/car-1.jpg" alt="" />
-          <div className="car-heading">
-            <button>2016</button>
-            <h3>Porsche cayenne turbo s</h3>
-          </div>
-          <div className="car-btn">
-            <button className="btn">Read More</button>
-            <span>$25,000</span>
-          </div>
-        </div>
-        <div className="car">
-          <img src="/car-1.jpg" alt="" />
-          <div className="car-heading">
-            <button>2016</button>
-            <h3>Porsche cayenne turbo s</h3>
-          </div>
-          <div className="car-btn">
-            <button className="btn">Read More</button>
-            <span>$25,000</span>
-          </div>
-        </div>
-        <div className="car">
-          <img src="/car-1.jpg" alt="" />
-          <div className="car-heading">
-            <button>2016</button>
-            <h3>Porsche cayenne turbo s</h3>
-          </div>
-          <div className="car-btn">
-            <button className="btn">Read More</button>
-            <span>$25,000</span>
-          </div>
-        </div>
-        {/* <div className="car">
-          <img src="/car-1.jpg" alt="" />
-          <h3>Porsche cayenne turbo s</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            accumsan lacus vel facilisis.
-          </p>
-          <button className="btn">Read More</button>
-          <span>$25,000</span>
-        </div> */}
       </div>
     </div>
   );
